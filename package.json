@@ -1,0 +1,23 @@
+{
+  "name": "sweetalert-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoWebDev/sweetalert-theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodrigoWebDev/sweetalert-theme/issues"
+  },
+  "homepage": "https://github.com/RodrigoWebDev/sweetalert-theme#readme",
+  "dependencies": {
+    "uglifycss": "0.0.29"
+  }
+}
