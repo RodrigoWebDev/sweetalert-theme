@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Front End Basic Boilerplate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="swal-theme.css">
+</head>
+
+<body>
+  <button id="mixin">Mixin</button>
+  
+  <script src="sweetalert.js"></script>
+  <script>
+
+    const mixin = document.querySelector("#mixin")
+    mixin.addEventListener("click", function(){
+      Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        onOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      }).fire({
+        icon: 'success',
+        title: 'Signed in successfully'
+      })
+    })
+  </script>
+</body>
+
+</html>

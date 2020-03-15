@@ -1,0 +1,43 @@
+
+/*    
+ _____  _    _  ___   _       _____ _                         
+/  ___|| |  | |/ _ \ | |     |_   _| |                        
+\ `--. | |  | / /_\ \| |       | | | |__   ___ _ __ ___   ___ 
+ `--. \| |/\| |  _  || |       | | | '_ \ / _ \ '_ ` _ \ / _ \
+/\__/ /\  /\  / | | || |____   | | | | | |  __/ | | | | |  __/
+\____/  \/  \/\_| |_/\_____/   \_/ |_| |_|\___|_| |_| |_|\___|
+
+*/
+
+:root{
+    --swal-color: #222;
+    --swal-text-color: #202020;
+}
+
+
+/***
+ *         _    _           _     ____              _____             ____  _       _     _   
+ *        / \  | | ___ _ __| |_  | __ )  _____  __ |_   _|__  _ __   |  _ \(_) __ _| |__ | |_ 
+ *       / _ \ | |/ _ \ '__| __| |  _ \ / _ \ \/ /   | |/ _ \| '_ \  | |_) | |/ _` | '_ \| __|
+ *      / ___ \| |  __/ |  | |_  | |_) | (_) >  <    | | (_) | |_) | |  _ <| | (_| | | | | |_ 
+ *     /_/   \_\_|\___|_|   \__| |____/ \___/_/\_\   |_|\___/| .__/  |_| \_\_|\__, |_| |_|\__|
+ *                                                           |_|              |___/           
+ */
+
+
+.swal2-icon.swal2-success [class^="swal2-success-line"] {
+  background-color: var(--swal-color) !important;
+}
+
+.swal2-icon.swal2-success .swal2-success-ring {
+  border-color: var(--swal-color) !important;
+  opacity: .1;
+}
+
+.swal2-popup.swal2-toast .swal2-success{
+    border-color: var(--swal-color) !important;
+}
+
+.swal2-popup.swal2-toast .swal2-title{
+    color: var(--swal-text-color) !important;
+}
